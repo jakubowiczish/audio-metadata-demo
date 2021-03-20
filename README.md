@@ -1,11 +1,157 @@
 ## Usage Examples
 
-## MediaInfo
+## PyMediaInfo
 
 ```
-MediaInfo
-dict_values(['General', '334', '1', 'General', ['General'], '0', '1', 'MPEG Audio', 'MPEG Audio', 'MPEG Audio', 'KDA-MORE2.mp3', 'KDA-MORE2.mp3', 'KDA-MORE2', 'mp3', 'MPEG Audio', ['MPEG Audio'], 'm1a mpa mpa1 mp1 m2a mpa2 mp2 mp3', 'MPEG Audio', 'audio/mpeg', 5548560, ['5.29 MiB', '5 MiB', '5.3 MiB', '5.29 MiB', '5.292 MiB'], 231105, ['3 min 51 s', '3 min 51 s 105 ms', '3 min 51 s', '00:03:51.105', '00:03:51.105'], 'CBR', ['Constant'], 192000, ['192 kb/s'], 1407, ['1.37 KiB (0%)', '1 KiB', '1.4 KiB', '1.37 KiB', '1.374 KiB', '1.37 KiB (0%)'], '0.00025', 'KDA_MORE', 'KDAAAA', 'ArtistKDA', 'KDA_MORE', 'dasda', '2021', 'UTC 2021-03-17 23:22:21', '2021-03-18 00:22:21', 'LAME3.100', ['LAME3.100'], 'Copyrithg', 'Essa', 'dash', '0', 'iso6mp41'])
-dict_values(['Audio', '280', '1', 'Audio', ['Audio'], '0', 'MPEG Audio', ['MPEG Audio'], 'MPEG Audio', 'Version 1', 'Layer 3', 'Joint stereo', 'Joint stereo', 'audio/mpeg', 231105, ['3 min 51 s', '3 min 51 s 105 ms', '3 min 51 s', '00:03:51.105', '00:03:52:31', '00:03:51.105 (00:03:52:31)'], 'CBR', ['Constant'], 192000, ['192 kb/s'], 2, ['2 channels'], '1152', 44100, ['44.1 kHz'], '10191744', '38.281', ['38.281 FPS (1152 SPF)'], '8847', 'Lossy', ['Lossy'], 5546527, ['5.29 MiB (100%)', '5 MiB', '5.3 MiB', '5.29 MiB', '5.290 MiB', '5.29 MiB (100%)'], '0.99963', 'LAME3.100', ['LAME3.100']])
+PyMediaInfo
+
+{
+    "track_type": "General",
+    "count": "334",
+    "count_of_stream_of_this_kind": "1",
+    "kind_of_stream": "General",
+    "other_kind_of_stream": [
+        "General"
+    ],
+    "stream_identifier": "0",
+    "count_of_audio_streams": "1",
+    "audio_format_list": "MPEG Audio",
+    "audio_format_withhint_list": "MPEG Audio",
+    "audio_codecs": "MPEG Audio",
+    "complete_name": "KDA-MORE2.mp3",
+    "file_name_extension": "KDA-MORE2.mp3",
+    "file_name": "KDA-MORE2",
+    "file_extension": "mp3",
+    "format": "MPEG Audio",
+    "other_format": [
+        "MPEG Audio"
+    ],
+    "format_extensions_usually_used": "m1a mpa mpa1 mp1 m2a mpa2 mp2 mp3",
+    "commercial_name": "MPEG Audio",
+    "internet_media_type": "audio/mpeg",
+    "file_size": 5548560,
+    "other_file_size": [
+        "5.29 MiB",
+        "5 MiB",
+        "5.3 MiB",
+        "5.29 MiB",
+        "5.292 MiB"
+    ],
+    "duration": 231105,
+    "other_duration": [
+        "3 min 51 s",
+        "3 min 51 s 105 ms",
+        "3 min 51 s",
+        "00:03:51.105",
+        "00:03:51.105"
+    ],
+    "overall_bit_rate_mode": "CBR",
+    "other_overall_bit_rate_mode": [
+        "Constant"
+    ],
+    "overall_bit_rate": 192000,
+    "other_overall_bit_rate": [
+        "192 kb/s"
+    ],
+    "stream_size": 1407,
+    "other_stream_size": [
+        "1.37 KiB (0%)",
+        "1 KiB",
+        "1.4 KiB",
+        "1.37 KiB",
+        "1.374 KiB",
+        "1.37 KiB (0%)"
+    ],
+    "proportion_of_this_stream": "0.00025",
+    "title": "KDA_MORE",
+    "album": "KDAAAA",
+    "album_performer": "ArtistKDA",
+    "track_name": "KDA_MORE",
+    "genre": "dasda",
+    "recorded_date": "2021",
+    "file_last_modification_date": "UTC 2021-03-17 23:22:21",
+    "file_last_modification_date__local": "2021-03-18 00:22:21",
+    "writing_library": "LAME3.100",
+    "other_writing_library": [
+        "LAME3.100"
+    ],
+    "copyright": "Copyrithg",
+    "comment": "Essa",
+    "major_brand": "dash",
+    "minor_version": "0",
+    "compatible_brands": "iso6mp41"
+}
+{
+    "track_type": "Audio",
+    "count": "280",
+    "count_of_stream_of_this_kind": "1",
+    "kind_of_stream": "Audio",
+    "other_kind_of_stream": [
+        "Audio"
+    ],
+    "stream_identifier": "0",
+    "format": "MPEG Audio",
+    "other_format": [
+        "MPEG Audio"
+    ],
+    "commercial_name": "MPEG Audio",
+    "format_version": "Version 1",
+    "format_profile": "Layer 3",
+    "format_settings": "Joint stereo",
+    "mode": "Joint stereo",
+    "internet_media_type": "audio/mpeg",
+    "duration": 231105,
+    "other_duration": [
+        "3 min 51 s",
+        "3 min 51 s 105 ms",
+        "3 min 51 s",
+        "00:03:51.105",
+        "00:03:52:31",
+        "00:03:51.105 (00:03:52:31)"
+    ],
+    "bit_rate_mode": "CBR",
+    "other_bit_rate_mode": [
+        "Constant"
+    ],
+    "bit_rate": 192000,
+    "other_bit_rate": [
+        "192 kb/s"
+    ],
+    "channel_s": 2,
+    "other_channel_s": [
+        "2 channels"
+    ],
+    "samples_per_frame": "1152",
+    "sampling_rate": 44100,
+    "other_sampling_rate": [
+        "44.1 kHz"
+    ],
+    "samples_count": "10191744",
+    "frame_rate": "38.281",
+    "other_frame_rate": [
+        "38.281 FPS (1152 SPF)"
+    ],
+    "frame_count": "8847",
+    "compression_mode": "Lossy",
+    "other_compression_mode": [
+        "Lossy"
+    ],
+    "stream_size": 5546527,
+    "other_stream_size": [
+        "5.29 MiB (100%)",
+        "5 MiB",
+        "5.3 MiB",
+        "5.29 MiB",
+        "5.290 MiB",
+        "5.29 MiB (100%)"
+    ],
+    "proportion_of_this_stream": "0.99963",
+    "writing_library": "LAME3.100",
+    "other_writing_library": [
+        "LAME3.100"
+    ]
+}
+
 ```
 
 ## Mutagen 

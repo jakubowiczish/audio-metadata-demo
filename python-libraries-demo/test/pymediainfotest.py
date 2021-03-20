@@ -1,8 +1,9 @@
 from pymediainfo import MediaInfo
+import json
 
 
 def print_media_info(file):
     media_info = MediaInfo.parse(file)
-    print("\nMediaInfo")
+    print("\nPyMediaInfo")
     for i in media_info.tracks:
-        print(i.to_data().values())
+        print(json.dumps(i.to_data(), indent=4))
