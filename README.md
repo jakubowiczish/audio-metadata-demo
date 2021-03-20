@@ -3,8 +3,6 @@
 ## PyMediaInfo
 
 ```
-PyMediaInfo
-
 {
     "track_type": "General",
     "count": "334",
@@ -157,7 +155,6 @@ PyMediaInfo
 ## Mutagen 
 
 ```
-Mutagen
 {'album': ['KDAAAA'], 'copyright': ['Copyrithg'], 'title': ['KDA_MORE'], 'albumartist': ['ArtistKDA'], 'genre': ['dasda'], 'date': ['2021']}
 ```
 
